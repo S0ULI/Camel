@@ -253,6 +253,10 @@
 
 .gallery-section {
   background-color: $text-color-white;
+
+  > div {
+    max-width: 700px;
+  }
 }
 .gallery {
   margin-bottom: 40px;
