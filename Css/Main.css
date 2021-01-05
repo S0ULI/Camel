@@ -674,10 +674,125 @@ h3 {
 }
 
 .music-player {
+  margin-top: 60px;
+  position: relative;
   width: 100%;
   max-width: 400px;
-  height: 540px;
+  height: 500px;
   background-color: #1f1f1f;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.music-player .controlers {
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #1f1f1f;
+  border: 2px solid #FF6517;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.music-player .controlers > a:nth-child(2) {
+  width: 45px;
+  height: 45px;
+}
+
+.music-player .controlers > a:nth-child(2) svg path {
+  fill: #FF6517;
+}
+
+.music-player .controlers > a:nth-child(2):hover svg path {
+  fill: #f1f1f1;
+}
+
+.music-player .controlers > a {
+  width: 18px;
+  height: 22px;
+  margin: 0 10px;
+}
+
+.music-player .controlers > a svg {
+  width: 100%;
+  height: 100%;
+}
+
+.music-player .controlers > a svg > path {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  fill: #f1f1f1;
+}
+
+.music-player .controlers > a:hover svg path {
+  fill: #FF6517;
+}
+
+.music-player .play-list {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 40px;
+  height: 90%;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 30px 0 30px;
+}
+
+.music-player .play-list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 95%;
+}
+
+.music-player .play-list div a, .music-player .play-list div span {
+  display: block;
+  color: #f1f1f1;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.music-player .play-list div a:hover {
+  color: #FC8C54;
+}
+
+.music-player .play-list div:last-child {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=main.css.map */
