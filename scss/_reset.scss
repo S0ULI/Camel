@@ -1,0 +1,44 @@
+*, *::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+    font-size: $html-font-size;
+    font-family: $main-font-family;
+    // for mozilla
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+textarea, button, input {
+    border: none;
+    outline: none;
+    font-family: $main-font-family;
+    resize: none;
+}
+
+body {
+    font-size: $main-font-size;
+    background-color: $background-color;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+h5 {
+    cursor: default;
+}

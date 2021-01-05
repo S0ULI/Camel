@@ -1,0 +1,491 @@
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: local no-repeat right bottom url(../images/cover-desktop.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.landing {
+  height: 100vh;
+
+  .logo {
+    display: block;
+    width: 45px;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: 2;
+    
+    >svg {
+      width: 45px;
+      height: 30px;
+    }
+  }
+}
+
+#toggle {
+  display: none;
+}
+
+/* Toggle Button */
+.button-toggle {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: $transition-duration + 0.1;
+  z-index: 1;
+
+  &:before, &:after, >span {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $text-color-white;
+    border-radius: 5px;
+    transition: $transition-duration;
+  }
+
+  >span {
+    transform: scalex(.7);
+    transform-origin: right;
+  }
+
+  &:before {
+    transform: translateY(-350%) rotate(0) scale(1);
+  }
+
+  &:after {
+    transform: translateY(350%) rotate(0) scale(1);
+  }
+}
+
+.nav {
+  pointer-events: none;
+  transition: $transition-duration;
+  position: absolute;
+  right: 27px;
+  top: 25px;
+  z-index: 2;
+}
+
+.nav-item {
+  position: relative;
+  display: block;
+  margin-left: 54px;
+  color: transparent;
+  font-size: 14px;
+  letter-spacing: -4px;
+  height: 7px;
+  line-height: 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: scaleY(0.15);
+}
+
+#toggle:checked {
+  & ~ .toggle-container .button-toggle {
+    box-shadow: 0 0 0 650px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba( 0, 0, 0, 0.8);
+
+    >span {
+      transform: scale(0);
+    }
+
+    &:before {
+      transform: translateY(-50%) rotate(45deg) scale(1);
+      background-color: $logo-color;
+    }
+    
+    &:after {
+      transform: translateY(-50%) rotate(-45deg) scale(1);
+      background-color: $logo-color;
+    }
+  }
+
+  // Open Nav
+  & ~ .nav {
+    pointer-events: auto;
+    transform: translatey(100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .nav-item {
+      color: $text-color-white;
+      letter-spacing: 1px;
+      height: 20px;
+      line-height: 20px;
+      margin-top: 30px;
+      opacity: 1;
+      transform: scaleY(1);
+      transition: $transition-duration, opacity 0.1s;
+      width: fit-content;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &.ticket {
+        opacity: 1;
+      }
+
+      &:hover:not(:last-of-type) {
+        color: $main-color;
+      }
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.ticket {
+  position: relative;
+  opacity: 0;
+  
+  &:hover::after {
+    transform: scaleX(1);
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: $main-color;
+    bottom: -5px;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(.4);
+    transition: $main-transition;
+  }
+}
+
+.landing-header {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  >h2 {
+    color: $text-color-white;
+    font-size: $landing-header-font-size;
+    width: fit-content;
+    line-height: 50px;
+
+    >span {
+      color: $main-color;
+    }
+  }
+
+  >p {
+    margin-top: -25px;
+    color: $light-gray-color;
+    font-size: $main-font-size;
+    width: 100%;
+    line-height: $line-height-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    >span {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+// History
+// History
+// History
+
+.history {
+  img {
+    border-radius: $card-border-radius;
+  }
+
+  >div {
+    margin-top: 60px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    color: $text-color-black;
+    font-size: $main-font-size;
+  }
+
+  h5 {
+    font-size: $sub-header-font-size;
+    color: $dark-gray-color;
+    font-weight: $main-font-weight;
+    line-height: $line-height-h5;
+  }
+
+  .read-btn {
+    margin: 20px 0;
+  }
+}
+
+// gallery
+// gallery
+// gallery
+
+.gallery-section {
+  background-color: $text-color-white;
+}
+.gallery {
+  margin-bottom: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 15px;
+  grid-template-areas:
+    "main main sub"
+    "main main sub2";
+    img {
+      border-radius: $card-border-radius;
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    .main-img {
+      grid-area: main;
+    }
+    .sub-img {
+      grid-area: sub;
+      height: 100%;
+    }
+    .sub2-img {
+      grid-area: sub2;
+      height: 100%;
+    }
+}
+
+// Shop
+// Shop
+// Shop
+
+.shop-container {
+  width: 100%;
+}
+.shop {
+  overflow: scroll;
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.shop-card {
+  background-color: $text-color-white;
+  margin: 0 20px;
+  width: $shop-card-width;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: $card-border-radius;
+  padding: $card-padding;
+
+  &:first-child {
+    margin-left: 5%;
+  }
+
+  .card-img {
+    width: 220px;
+    height: 180px;
+    align-self: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transform: scale(1);
+      transition: all ease .5s;
+      transform-origin: center;
+      &:hover {
+          transform: scale(1.4);
+      }
+    }
+  }
+
+  .card-info {
+    width: 100%;
+    margin-top: 20px;
+    
+    span:first-child {
+      font-weight: $landing-header-font-weight;
+      display: block;
+      color: $text-color-black;
+    }
+
+    span:last-child {
+        display: block;
+        font-size: $main-font-size;
+        color: $dark-gray-color;
+    }
+  }
+
+  .card-size {
+    margin-top: 10px;
+
+    span {
+      color: $text-color-black;
+      font-size: $main-font-size;
+      font-weight: $btn-font-weight;
+    }
+
+    .size-btn {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      width: $shop-card-width - 60;
+
+      >a {
+        width: 40px;
+        height: 40px;
+        border: solid 1px $text-color-black;
+        color: $dark-gray-color;
+        border-radius: 50%;
+        transition: all ease .3s;
+        text-align: center;
+        line-height: 40px;
+
+        &:hover {
+            background-color: $main-color;
+            border-color: transparent;
+            color: $text-color-white
+        }
+      }
+    }
+  }
+
+  .card-btn {
+    margin-top: 20px;
+    width: $shop-card-width;
+    height: 60px;
+    background-color: #000000;
+    align-self: center;
+    border-radius: $card-border-radius;
+    transition: all ease .3s;
+    
+    >a {
+        padding: 7.5px 30px;
+        font-weight: $btn-font-weight;
+        >span {
+            font-size: 1.2rem;
+            color: $light-gray-color;
+        }
+        
+        >div {
+            display: flex;
+            justify-content: space-between;
+            color: $text-color-white;
+        }
+
+    }
+
+    &:hover {
+    background-color: $text-color-black;
+    }
+  }
+}
+
+// music
+// Music
+// music
+
+.music-section {
+  background-color: $container-color;
+  overflow: hidden;
+}
+.album-cover {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+  >a {
+    position: relative;
+    
+    &:hover > div {
+      opacity: 1;
+    }
+
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: $card-border-radius;
+      background-color: #0000006e;
+      opacity: 0;
+      transition: all ease .3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+          font-size: $sub-header-font-size;
+          font-weight: $btn-font-weight;
+          color: $text-color-white;
+          cursor: pointer;
+      }
+    }
+  }
+  
+  .i-can-see-cover {
+    width:  $music-cover-width * ($last-cover-size);
+    max-width: $music-cover-max-height * ($last-cover-size);
+    transform: translateX(-50%);
+    img {
+      width: $music-cover-width * ($last-cover-size);
+      max-width: $music-cover-max-height * ($last-cover-size);
+    }
+  }
+  .rajaz-cover {
+    width: $music-cover-width * ($middle-cover-size);
+    max-width: $music-cover-max-width * ($middle-cover-size);
+    transform: translateX(-70%);
+    img {
+      width: $music-cover-width * ($middle-cover-size);
+      max-width: $music-cover-max-width * ($middle-cover-size);
+    }
+  }
+  .stationary-traveller-cover {
+    width: $music-cover-width;
+    max-width: $music-cover-max-width;
+    transform: translateX(-80%);
+    img {
+      width: $music-cover-width;
+      max-width: $music-cover-max-width;
+    }
+  }
+}
+
+// music-player
+.music-player {
+  width: 100%;
+  max-width: 400px;
+  height: 540px;
+  background-color: $music-player-color;
+  border-radius: $card-border-radius
+}

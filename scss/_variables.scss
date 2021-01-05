@@ -1,0 +1,89 @@
+// container width
+$container-width: 90%;
+$shop-card-width: 260px;
+
+
+// font properties
+// family
+$main-font-family: poppins;
+
+//size
+$html-font-size:           62.5%;
+// desktop size
+$landing-header-font-d-size: 7.2rem;
+$header-font-d-size:         4.2rem;
+$sub-header-font-d-size:     3.2rem;
+$main-font-d-size:           1.7rem;
+$secondary-font-d-size:      1.6rem;
+$footer-font-d-size:         1.4rem;
+// phone size
+$landing-header-font-size: 3.6rem;
+$header-font-size:         2.4rem;
+$sub-header-font-size:     2rem;
+$secondary-font-size:      1.6rem;
+$main-font-size:           1.4rem;
+$footer-font-size:         1.2rem;
+
+//weight
+$main-font-weight:           400;
+$btn-font-weight:            500;
+$landing-header-font-weight: 700;
+
+// line-height
+$line-height-text: 20px;
+$line-height-h5:   50px;
+
+
+// color
+// pallete
+$text-color-white:  #f1f1f1;
+$light-gray-color:  #cccccc;
+$background-color:  #EED8B9;
+$logo-color:        #FC8C54;
+$main-color:        #FF6517;
+$footer-logo-color: #935351;
+$footer-logo-color: #935351;
+$dark-gray-color:   #505050;
+$text-color-black:  #1f1f1f;
+$Shop-btn-color:    #000000;
+// theme
+$music-player-color:    $text-color-black;
+$shop-card-color:     $text-color-white;
+$container-color:     $text-color-white;
+$nav-btn-hover-color: $light-gray-color;
+
+
+// box-shadow
+$btn-box-shadow: 2px 2px 10px 0px #000000 8%;
+
+
+// opacity
+$footer-box-opacity: 5%;
+
+
+// border radius
+$card-border-radius:   25px;
+$btn-border-radius:    10px;
+$footer-border-radius: 40px 40px 0 0;
+
+
+// padding
+$btn-padding:    10px 15px;
+$card-padding:   20px 30px 0 30px;
+$card-d-padding: 50px 35px 30px 35px;
+$input-padding:  0px 20px;
+
+
+// transition 
+$main-transition: all ease .3s;
+$transition-duration: 0.5s;
+
+
+// size
+$music-cover-width:      150%;
+$music-cover-height:     150%;
+$music-cover-max-width:  400px;
+$music-cover-max-height: 400px;
+$middle-cover-size:      2/3;
+$last-cover-size:        1/2;
+
