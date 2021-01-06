@@ -55,6 +55,20 @@ body > section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
@@ -901,5 +915,88 @@ h3 {
 
 .contact-section form .contact-btn button span {
   margin-left: 5px;
+}
+
+.footer-section {
+  height: 500px;
+  background: local no-repeat top center url(../images/Vector/Egypt-Phone.svg);
+  background-size: cover;
+}
+
+.footer-section footer {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+  background-color: #00000015;
+  border-radius: 40px 40px 0 0;
+}
+
+.footer {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.links {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.copy-right {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 100vw;
+  background-color: #00000015;
+}
+
+.copy-right > div {
+  width: 90%;
+  margin: 5px auto;
+  font-size: 1.2rem;
+}
+
+.copy-right > div span {
+  color: #935351;
+  margin-bottom: 5px;
+}
+
+.copy-right > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.copy-right > div ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.copy-right > div ul li a {
+  color: #505050;
+}
+
+.copy-right > div ul li a:hover {
+  text-decoration: underline;
+}
+
+.copy-right > div ul li::after {
+  content: "|";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  color: #935351;
+}
+
+.copy-right > div ul li:first-child {
+  margin: 0;
+}
+
+.copy-right > div ul li:first-child::after {
+  content: none;
 }
 /*# sourceMappingURL=main.css.map */
