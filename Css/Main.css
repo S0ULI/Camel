@@ -125,7 +125,7 @@ h3 {
   height: 100vh;
 }
 
-.landing .logo {
+.logo {
   display: block;
   width: 45px;
   height: 30px;
@@ -135,7 +135,7 @@ h3 {
   z-index: 2;
 }
 
-.landing .logo > svg {
+.logo > svg {
   width: 45px;
   height: 30px;
 }
@@ -979,7 +979,6 @@ h3 {
 
 .site-links > ul a:hover {
   text-decoration: underline;
-  color: #1f1f1f;
 }
 
 .site-links > ul > li {
@@ -995,6 +994,10 @@ h3 {
 
 .site-links > ul > li > input:checked ~ ul {
   display: block;
+}
+
+.site-links > ul > li > input:checked ~ Label {
+  font-weight: 500;
 }
 
 .site-links > ul > li ul {

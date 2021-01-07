@@ -9,20 +9,20 @@
 
 .landing {
   height: 100vh;
+}
 
-  .logo {
-    display: block;
+.logo {
+  display: block;
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  z-index: 2;
+  
+  >svg {
     width: 45px;
     height: 30px;
-    position: absolute;
-    left: 0px;
-    top: 20px;
-    z-index: 2;
-    
-    >svg {
-      width: 45px;
-      height: 30px;
-    }
   }
 }
 
@@ -697,12 +697,10 @@
 
       &:hover {
         text-decoration: underline;
-        color: $text-color-black;
       }
     }
 
     >li {
-      // position: relative;
       margin-top: 15px;
       width: fit-content;
 
@@ -712,6 +710,9 @@
 
       >input:checked ~ ul {
         display: block;
+      }
+      >input:checked ~ Label {
+        font-weight: $btn-font-weight;
       }
       ul {
         display: none;
