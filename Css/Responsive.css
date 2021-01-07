@@ -201,4 +201,26 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 576px) {
+  #toggle:checked ~ .toggle-container .button-toggle {
+    -webkit-box-shadow: 0 0 0 850px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 0 850px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  .footer-section {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .column-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .offset-1 {
+    margin-left: 8.33333%;
+  }
+}
 /*# sourceMappingURL=Responsive.css.map */

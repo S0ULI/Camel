@@ -11,6 +11,10 @@ body > section {
     display: flex;
     flex-direction: column;
 }
+.column-row {
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
     position: relative;
@@ -44,4 +48,8 @@ h3 {
     line-height: 80px;
     letter-spacing: 1%;
     cursor: default;
+}
+
+.offset-1 {
+    margin-left: 0;
 }
