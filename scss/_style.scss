@@ -659,6 +659,7 @@
   height: 500px;
   background: local no-repeat top center url(../images/Vector/Egypt-Phone.svg);
   background-size: cover;
+  position: relative;
 
   footer {
     position: absolute;
@@ -667,24 +668,80 @@
     bottom: 0;
     background-color: $footer-color;
     border-radius: $footer-border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
   }
 }
-.footer {
-  height: $footer-links-height;
-  position: absolute;
-  bottom: 0;
-  left: (100 - $container-width) / 2;
+.footer-links {
+  height: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $container-width;
+  margin: 0 auto;
 }
-.links {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.site-links {
+  > ul {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: $text-color-black;
+    }
+
+    a {
+      color: $footer-logo-color;
+
+      &:hover {
+        text-decoration: underline;
+        color: $text-color-black;
+      }
+    }
+
+    >li {
+      // position: relative;
+      margin-top: 15px;
+      width: fit-content;
+
+      input {
+        display: none;
+      }
+
+      >input:checked ~ ul {
+        display: block;
+      }
+      ul {
+        display: none;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.social-links {
+  height: 90px;
+  width: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+
+  svg {
+    width: 40px;
+    height: 40px;
+    path {
+      fill: $footer-logo-color;
+    }
+  }
+  
+  a:hover > svg path {
+    fill: $text-color-black;
+  }
 }
 .copy-right {
-  position: absolute;
-  bottom: 0;
-  left: ($container-width - 100) / 2;
   width: 100vw;
   background-color: $footer-color;
 

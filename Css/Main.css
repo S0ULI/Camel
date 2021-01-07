@@ -921,6 +921,7 @@ h3 {
   height: 500px;
   background: local no-repeat top center url(../images/Vector/Egypt-Phone.svg);
   background-size: cover;
+  position: relative;
 }
 
 .footer-section footer {
@@ -930,25 +931,104 @@ h3 {
   bottom: 0;
   background-color: #00000015;
   border-radius: 40px 40px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.footer {
-  height: 90%;
-  position: absolute;
-  bottom: 0;
-  left: 5%;
+.footer-links {
+  height: 100%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.links {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.site-links > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.site-links > ul span {
+  color: #1f1f1f;
+}
+
+.site-links > ul a {
+  color: #935351;
+}
+
+.site-links > ul a:hover {
+  text-decoration: underline;
+  color: #1f1f1f;
+}
+
+.site-links > ul > li {
+  margin-top: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.site-links > ul > li input {
+  display: none;
+}
+
+.site-links > ul > li > input:checked ~ ul {
+  display: block;
+}
+
+.site-links > ul > li ul {
+  display: none;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.social-links {
+  height: 90px;
+  width: 90px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+}
+
+.social-links svg {
+  width: 40px;
+  height: 40px;
+}
+
+.social-links svg path {
+  fill: #935351;
+}
+
+.social-links a:hover > svg path {
+  fill: #1f1f1f;
 }
 
 .copy-right {
-  position: absolute;
-  bottom: 0;
-  left: -5%;
   width: 100vw;
   background-color: #00000015;
 }
