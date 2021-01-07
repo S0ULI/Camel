@@ -1,3 +1,5 @@
+@import "variables";
+
 $col-count: 12;
 $first-breakpoint: xs;
 $breakpoints: (
@@ -34,10 +36,26 @@ $breakpoints: (
     }
 }
 @media screen and (min-width: 768px) {
+    body {
+        font-size: $main-font-d-size;
+    }
+    .logo {
+        width: 65px;
+        height: 45px;
+    }
     .column-row {
         flex-direction: row;
     }
     .offset-1 {
         margin-left: (100%) / 12;
     }
+    .history p {
+        font-size: $main-font-d-size;
+    }
+    .buttons {
+        font-size: $secondary-font-d-size;
+    }
+}
+@media screen and (min-width) {
+
 }

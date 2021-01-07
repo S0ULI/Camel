@@ -213,6 +213,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 1.7rem;
+  }
+  .logo {
+    width: 65px;
+    height: 45px;
+  }
   .column-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -221,6 +228,12 @@
   }
   .offset-1 {
     margin-left: 8.33333%;
+  }
+  .history p {
+    font-size: 1.7rem;
+  }
+  .buttons {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */
