@@ -241,6 +241,12 @@
   .buttons {
     font-size: 2rem;
   }
+  .footer-section {
+    height: 700px;
+  }
+  .copy-right > div span {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -269,6 +275,15 @@
   }
   .landing-header > p span {
     text-align: left;
+  }
+  .footer-section footer {
+    height: 300px;
+  }
+  .site-links > ul > li ul {
+    display: block;
+  }
+  .site-links label {
+    display: none;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */

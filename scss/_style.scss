@@ -718,6 +718,10 @@
       }
   }
 }
+
+// footer
+// footer
+// footer
 .footer-section {
   height: 500px;
   background: local no-repeat top center url(../images/Vector/Egypt-Phone.svg);
@@ -747,12 +751,19 @@
   margin: 0 auto;
 }
 .site-links {
+  label {
+    display: block;
+  }
   > ul {
     display: flex;
     flex-direction: column;
 
     span {
       color: $text-color-black;
+      cursor: pointer;
+      &:hover {
+        font-weight: $btn-font-weight;
+      }
     }
 
     a {
@@ -776,6 +787,10 @@
       }
       >input:checked ~ Label {
         font-weight: $btn-font-weight;
+
+        span {
+          font-weight: $btn-font-weight;
+        }
       }
       ul {
         display: none;
@@ -818,6 +833,7 @@
       color: $footer-logo-color;
       margin-bottom: 5px;
       cursor: default;
+      margin-right: 0px;
     }
 
     ul {
