@@ -250,6 +250,10 @@
 }
 
 @media screen and (min-width: 992px) {
+  h3 {
+    font-size: 4.2rem;
+    line-height: 120px;
+  }
   .nav-bar {
     display: none;
   }
@@ -261,7 +265,7 @@
     width: -moz-fit-content;
     width: fit-content;
     height: 230px;
-    top: 40%;
+    top: 25%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -276,14 +280,33 @@
   .landing-header > p span {
     text-align: left;
   }
+  .history h5 {
+    font-size: 3.2rem;
+  }
   .footer-section footer {
     height: 300px;
+  }
+  .site-links > ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .site-links > ul > li {
+    margin-left: 80px;
+  }
+  .site-links > ul > li:first-of-type {
+    margin-left: 0;
   }
   .site-links > ul > li ul {
     display: block;
   }
   .site-links label {
     display: none;
+  }
+  .display-none {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */

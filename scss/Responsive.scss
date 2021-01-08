@@ -66,6 +66,10 @@ $breakpoints: (
     }
 }
 @media screen and (min-width:992px) {
+    h3 {
+        font-size: $header-font-d-size;
+        line-height: 120px;
+    }
     .nav-bar {
         display: none;
     }
@@ -75,7 +79,7 @@ $breakpoints: (
     .landing-header {
         width: fit-content;
         height: 230px;
-        top: 40%;
+        top: 25%;
         align-items: flex-start;
 
         > h2 {
@@ -91,6 +95,9 @@ $breakpoints: (
             }
         }
     }
+    .history h5 {
+        font-size: $sub-header-font-d-size;
+    }
     .footer-section {
 
         footer {
@@ -98,12 +105,28 @@ $breakpoints: (
         }
     }
     .site-links {
-        > ul > li ul {
-            display: block;
+        > ul {
+            flex-direction: row;
+
+            > li {
+                margin-left: 80px;
+                
+                &:first-of-type {
+                    margin-left: 0;
+                }
+
+                ul {
+                    display: block;
+                }
+            }
         }
 
         label {
            display: none;
         }
+    }
+    .display-none {
+        display: block;
+        margin-bottom: 10px;
     }
 }

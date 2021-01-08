@@ -30,6 +30,7 @@ body > section {
     background-color: $main-color;
     padding: $btn-padding;
     border-radius: $btn-border-radius;
+    transition: $main-transition;
 
     >span {
       margin-left: 10px;

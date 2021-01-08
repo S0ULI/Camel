@@ -100,6 +100,8 @@ body > section {
   background-color: #FF6517;
   padding: 10px 15px;
   border-radius: 10px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .buttons > span {
@@ -481,6 +483,7 @@ h3 {
 .history p {
   color: #1f1f1f;
   font-size: 1.4rem;
+  line-height: 1.6em;
 }
 
 .history h5 {
@@ -1053,6 +1056,11 @@ h3 {
   margin: 0 auto;
 }
 
+.display-none {
+  display: none;
+  cursor: default;
+}
+
 .site-links label {
   display: block;
 }
@@ -1067,12 +1075,12 @@ h3 {
           flex-direction: column;
 }
 
-.site-links > ul span {
+.site-links > ul label span {
   color: #1f1f1f;
   cursor: pointer;
 }
 
-.site-links > ul span:hover {
+.site-links > ul label span:hover {
   font-weight: 500;
 }
 
@@ -1089,6 +1097,11 @@ h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: 0;
+}
+
+.site-links > ul > li:first-of-type {
+  margin-left: 0;
 }
 
 .site-links > ul > li input {

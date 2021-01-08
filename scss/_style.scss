@@ -295,6 +295,7 @@
   p {
     color: $text-color-black;
     font-size: $main-font-size;
+    line-height: $p-lineheight;
   }
 
   h5 {
@@ -750,6 +751,10 @@
   width: $container-width;
   margin: 0 auto;
 }
+.display-none {
+  display: none;
+  cursor: default;
+}
 .site-links {
   label {
     display: block;
@@ -758,7 +763,7 @@
     display: flex;
     flex-direction: column;
 
-    span {
+    label span {
       color: $text-color-black;
       cursor: pointer;
       &:hover {
@@ -777,6 +782,11 @@
     >li {
       margin-top: 15px;
       width: fit-content;
+      margin-left: 0;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
 
       input {
         display: none;
