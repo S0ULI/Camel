@@ -20,14 +20,17 @@
     display: flex;
   }
 }
+.phone-l {
+  left: 0px;
+  top: 20px;
+  position: absolute;
+}
 
 .logo {
   display: block;
   width: 45px;
   height: 30px;
-  position: absolute;
-  left: 0px;
-  top: 20px;
+
   z-index: 2;
   transition: $main-transition;
 
@@ -169,10 +172,12 @@
     }
   }
 }
+.phone-t {
+  opacity: 0;
+}
 
 .ticket {
   position: relative;
-  opacity: 0;
   
   &:hover::after {
     transform: scaleX(1);
@@ -193,11 +198,45 @@
   }
 }
 
+// desktop-nav
+.navbar-desktop {
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  display: none;
+
+  > div {
+    width: $container-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      
+      li {
+        margin-left: 20px;
+
+        a {
+          color: $text-color-white;
+          transition: $main-transition;
+
+          &:hover {
+            color: $light-gray-color;
+          }
+        }
+      }
+    }
+  }
+}
+
 .landing-header {
   position: absolute;
   top: 55%;
   width: 100%;
-  height: 200px;
+  height: 190px;
   display: flex;
   justify-content: space-between;
   align-items: center;

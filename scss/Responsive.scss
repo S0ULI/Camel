@@ -46,6 +46,9 @@ $breakpoints: (
     .column-row {
         flex-direction: row;
     }
+    .reverse {
+        flex-direction: row-reverse;
+    }
     .offset-1 {
         margin-left: (100%) / 12;
     }
@@ -56,6 +59,30 @@ $breakpoints: (
         font-size: $secondary-font-d-size;
     }
 }
-@media screen and (min-width) {
+@media screen and (min-width:992px) {
+    .nav-bar {
+        display: none;
+    }
+    .navbar-desktop {
+        display: block;
+    }
+    .landing-header {
+        width: fit-content;
+        height: 230px;
+        top: 40%;
+        align-items: flex-start;
 
+        > h2 {
+            font-size: $landing-header-font-d-size;
+        }
+
+        > p {
+            font-size: $main-font-d-size;
+            margin-top: -10px;
+
+            span {
+                text-align: left;
+            }
+        }
+    }
 }

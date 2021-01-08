@@ -226,6 +226,12 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .offset-1 {
     margin-left: 8.33333%;
   }
@@ -234,6 +240,35 @@
   }
   .buttons {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-bar {
+    display: none;
+  }
+  .navbar-desktop {
+    display: block;
+  }
+  .landing-header {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 230px;
+    top: 40%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .landing-header > h2 {
+    font-size: 7.2rem;
+  }
+  .landing-header > p {
+    font-size: 1.7rem;
+    margin-top: -10px;
+  }
+  .landing-header > p span {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */
