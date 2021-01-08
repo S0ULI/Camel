@@ -14,7 +14,6 @@
   width: 100%;
   > div {
     height: 100%;
-    width: $container-width;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -206,7 +205,6 @@
   display: none;
 
   > div {
-    width: $container-width;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -748,7 +746,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $container-width;
   margin: 0 auto;
 }
 .display-none {
@@ -835,7 +832,6 @@
   background-color: $footer-color;
 
   > div {
-    width: $container-width;
     margin: 5px auto;
     font-size: $footer-font-size;
 

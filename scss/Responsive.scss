@@ -117,6 +117,10 @@ $breakpoints: (
 
                 ul {
                     display: block;
+
+                    li {
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -128,5 +132,40 @@ $breakpoints: (
     .display-none {
         display: block;
         margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .footer-section {
+        height: 800px;
+    }
+    .site-links > ul > li {
+         margin-left: 120px;
+    }
+    .social-links {
+        height: 115px;
+        width: 115px;
+        gap: 15px 15px;
+      
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+    }
+    .container {
+        width: $container-1200-width;
+    }
+    .container-width {
+        width: $container-1200-width;
+    }
+}
+@media screen and (min-width:1600px) {
+    .container {
+        width: $container-1600-width;
+    }
+    .container-width {
+        width: $container-1600-width;
+    }
+    .footer-section {
+        background: left url(../images/Vector/Egypt-Desktop2.svg);
     }
 }

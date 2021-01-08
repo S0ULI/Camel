@@ -301,12 +301,51 @@
   .site-links > ul > li ul {
     display: block;
   }
+  .site-links > ul > li ul li {
+    margin-top: 10px;
+  }
   .site-links label {
     display: none;
   }
   .display-none {
     display: block;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section {
+    height: 800px;
+  }
+  .site-links > ul > li {
+    margin-left: 120px;
+  }
+  .social-links {
+    height: 115px;
+    width: 115px;
+    gap: 15px 15px;
+  }
+  .social-links svg {
+    width: 50px;
+    height: 50px;
+  }
+  .container {
+    width: 80%;
+  }
+  .container-width {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 75%;
+  }
+  .container-width {
+    width: 75%;
+  }
+  .footer-section {
+    background: left url(../images/Vector/Egypt-Desktop2.svg);
   }
 }
 /*# sourceMappingURL=Responsive.css.map */

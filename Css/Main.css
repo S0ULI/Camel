@@ -94,6 +94,10 @@ body > section {
           align-items: center;
 }
 
+.container-width {
+  width: 90%;
+}
+
 .buttons {
   color: #f1f1f1;
   font-size: 1.6rem;
@@ -147,7 +151,6 @@ h3 {
 
 .nav-bar > div {
   height: 100%;
-  width: 90%;
   position: relative;
   margin: 0 auto;
   display: -webkit-box;
@@ -370,7 +373,6 @@ h3 {
 }
 
 .navbar-desktop > div {
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,7 +1054,6 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -1157,7 +1158,6 @@ h3 {
 }
 
 .copy-right > div {
-  width: 90%;
   margin: 5px auto;
   font-size: 1.2rem;
 }

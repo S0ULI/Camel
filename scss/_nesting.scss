@@ -23,6 +23,9 @@ body > section {
     flex-direction: column;
     align-items: center;
 }
+.container-width {
+    width: $container-width;
+}
 
 .buttons {
     color: $text-color-white;
