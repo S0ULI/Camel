@@ -232,7 +232,7 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .offset-1 {
+  .offset-m-1 {
     margin-left: 8.33333%;
   }
   .history p {
@@ -311,11 +311,26 @@
     display: block;
     margin-bottom: 10px;
   }
+  .copy-right > div {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+  .container {
+    width: 85%;
+  }
+  .container-width {
+    width: 85%;
+  }
+  .shop-card:first-child {
+    margin-left: 7.5%;
+  }
   .footer-section {
-    height: 800px;
+    background: left url(../images/Vector/Egypt-Desktop2.svg);
   }
   .site-links > ul > li {
     margin-left: 120px;
@@ -329,23 +344,14 @@
     width: 50px;
     height: 50px;
   }
-  .container {
-    width: 80%;
-  }
-  .container-width {
-    width: 80%;
-  }
 }
 
 @media screen and (min-width: 1600px) {
   .container {
-    width: 75%;
+    width: 1250px;
   }
   .container-width {
-    width: 75%;
-  }
-  .footer-section {
-    background: left url(../images/Vector/Egypt-Desktop2.svg);
+    width: 1250px;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */

@@ -29,21 +29,19 @@
   display: block;
   width: 45px;
   height: 30px;
-
   z-index: 2;
-  transition: $main-transition;
-
-  &:hover svg path {
-    fill: $main-color;
-  }
   
   >svg {
     width: 100%;
     height: 100%;
-
+    
     path {
       fill: $logo-color;
     }
+  }
+
+  &:hover svg path {
+    fill: $main-color;
   }
 }
 
@@ -220,10 +218,10 @@
         a {
           color: $text-color-white;
           transition: $main-transition;
+        }
 
-          &:hover {
-            color: $light-gray-color;
-          }
+        &:not(:last-of-type) a:hover {
+          color: $light-gray-color;
         }
       }
     }
@@ -293,7 +291,7 @@
   p {
     color: $text-color-black;
     font-size: $main-font-size;
-    line-height: $p-lineheight;
+    line-height: $p-line-height;
   }
 
   h5 {
@@ -354,11 +352,15 @@
 
 .shop-container {
   width: 100%;
+  position: relative;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 .shop {
   overflow: scroll;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   width: 100%;
 }
 .shop-card {
@@ -430,9 +432,9 @@
         border: solid 1px $text-color-black;
         color: $dark-gray-color;
         border-radius: 50%;
-        transition: all ease .3s;
+        transition: $main-transition;
         text-align: center;
-        line-height: 40px;
+        line-height: 38px;
 
         &:hover {
             background-color: $main-color;
@@ -446,7 +448,6 @@
   .card-btn {
     margin-top: 20px;
     width: $shop-card-width;
-    height: 60px;
     background-color: #000000;
     align-self: center;
     border-radius: $card-border-radius;
@@ -477,7 +478,6 @@
 // music
 // Music
 // music
-
 .music-section {
   background-color: $container-color;
   overflow: hidden;
@@ -489,22 +489,24 @@
 .album-cover {
   display: flex;
   align-items: center;
-  width: 100%;
   
-  >a {
+  a {
     position: relative;
+    display: block;
     
-    &:hover > div {
+    &:hover div {
       opacity: 1;
+    }
+    img {
+      position: relative;
+      display: block;
     }
 
     div {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      border-radius: $card-border-radius;
+      // border-radius: $card-border-radius;
       background-color: #0000006e;
       opacity: 0;
       transition: all ease .3s;
@@ -524,11 +526,12 @@
   
   .i-can-see-cover {
     width:  $music-cover-width * ($last-cover-size);
-    max-width: $music-cover-max-height * ($last-cover-size);
+    max-width: $music-cover-max-width * ($last-cover-size);
     transform: translateX(-50%);
     img {
       width: $music-cover-width * ($last-cover-size);
-      max-width: $music-cover-max-height * ($last-cover-size);
+      max-width: $music-cover-max-width * ($last-cover-size);
+      border-radius: $card-border-radius * ($last-cover-size);
     }
   }
   .rajaz-cover {
@@ -538,6 +541,7 @@
     img {
       width: $music-cover-width * ($middle-cover-size);
       max-width: $music-cover-max-width * ($middle-cover-size);
+      border-radius: $card-border-radius * ($middle-cover-size);
     }
   }
   .stationary-traveller-cover {
@@ -547,6 +551,7 @@
     img {
       width: $music-cover-width;
       max-width: $music-cover-max-width;
+      border-radius: $card-border-radius;
     }
   }
 }
@@ -834,10 +839,10 @@
   > div {
     margin: 5px auto;
     font-size: $footer-font-size;
+    line-height: $line-height-text;
 
     span {
       color: $footer-logo-color;
-      margin-bottom: 5px;
       cursor: default;
       margin-right: 0px;
     }

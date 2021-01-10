@@ -49,7 +49,7 @@ $breakpoints: (
     .reverse {
         flex-direction: row-reverse;
     }
-    .offset-1 {
+    .offset-m-1 {
         margin-left: (100%) / 12;
     }
     .history p {
@@ -70,6 +70,8 @@ $breakpoints: (
         font-size: $header-font-d-size;
         line-height: 120px;
     }
+
+    // nav-bar
     .nav-bar {
         display: none;
     }
@@ -95,9 +97,13 @@ $breakpoints: (
             }
         }
     }
+
+    // history
     .history h5 {
         font-size: $sub-header-font-d-size;
     }
+
+    // footer
     .footer-section {
 
         footer {
@@ -133,10 +139,29 @@ $breakpoints: (
         display: block;
         margin-bottom: 10px;
     }
+    .copy-right > div {
+        font-size: $footer-font-d-size;
+    }
 }
 @media screen and (min-width:1200px) {
+    .offset-xl-1 {
+        margin-left: (100%) / 12;
+    }
+    .container {
+        width: $container-1200-width;
+    }
+    .container-width {
+        width: $container-1200-width;
+    }
+
+    // shop
+    .shop-card:first-child {
+        margin-left: (100% - $container-1200-width) / 2;
+    }
+
+    // footer
     .footer-section {
-        height: 800px;
+        background: left url(../images/Vector/Egypt-Desktop2.svg);
     }
     .site-links > ul > li {
          margin-left: 120px;
@@ -151,12 +176,6 @@ $breakpoints: (
           height: 50px;
         }
     }
-    .container {
-        width: $container-1200-width;
-    }
-    .container-width {
-        width: $container-1200-width;
-    }
 }
 @media screen and (min-width:1600px) {
     .container {
@@ -164,8 +183,5 @@ $breakpoints: (
     }
     .container-width {
         width: $container-1600-width;
-    }
-    .footer-section {
-        background: left url(../images/Vector/Egypt-Desktop2.svg);
     }
 }
