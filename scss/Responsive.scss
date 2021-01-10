@@ -43,15 +43,6 @@ $breakpoints: (
         width: 65px;
         height: 45px;
     }
-    .column-row {
-        flex-direction: row;
-    }
-    .reverse {
-        flex-direction: row-reverse;
-    }
-    .offset-m-1 {
-        margin-left: (100%) / 12;
-    }
     .history p {
         font-size: $main-font-d-size;
     }
@@ -70,7 +61,15 @@ $breakpoints: (
         font-size: $header-font-d-size;
         line-height: 120px;
     }
-
+    .offset-l-1 {
+        margin-left: (100%) / 12;
+    }
+    .column-row {
+        flex-direction: row;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
     // nav-bar
     .nav-bar {
         display: none;
@@ -144,9 +143,6 @@ $breakpoints: (
     }
 }
 @media screen and (min-width:1200px) {
-    .offset-xl-1 {
-        margin-left: (100%) / 12;
-    }
     .container {
         width: $container-1200-width;
     }

@@ -213,7 +213,7 @@
       justify-content: flex-end;
       
       li {
-        margin-left: 20px;
+        margin-left: 30px;
 
         a {
           color: $text-color-white;
@@ -489,24 +489,29 @@
 .album-cover {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   
   a {
     position: relative;
     display: block;
+    overflow: hidden;
     
     &:hover div {
       opacity: 1;
     }
     img {
-      position: relative;
       display: block;
+      width: 100%;
+      height: 100%;
     }
 
     div {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      // border-radius: $card-border-radius;
       background-color: #0000006e;
       opacity: 0;
       transition: all ease .3s;
@@ -520,39 +525,28 @@
           color: $text-color-white;
           cursor: pointer;
           display: block;
+          text-align: center;
       }
     }
   }
   
   .i-can-see-cover {
-    width:  $music-cover-width * ($last-cover-size);
-    max-width: $music-cover-max-width * ($last-cover-size);
-    transform: translateX(-50%);
-    img {
-      width: $music-cover-width * ($last-cover-size);
-      max-width: $music-cover-max-width * ($last-cover-size);
-      border-radius: $card-border-radius * ($last-cover-size);
-    }
+    flex: 0 0 25%;
+    transform: translateX(-5%);
+    border-radius: $card-border-radius * ($last-cover-size);
+    max-width: 200px;
   }
   .rajaz-cover {
-    width: $music-cover-width * ($middle-cover-size);
-    max-width: $music-cover-max-width * ($middle-cover-size);
-    transform: translateX(-70%);
-    img {
-      width: $music-cover-width * ($middle-cover-size);
-      max-width: $music-cover-max-width * ($middle-cover-size);
-      border-radius: $card-border-radius * ($middle-cover-size);
-    }
+    flex: 0 0 40%;
+    transform: translateX(-15%);
+    border-radius: $card-border-radius * ($middle-cover-size);
+    max-width: 300px;
   }
   .stationary-traveller-cover {
-    width: $music-cover-width;
-    max-width: $music-cover-max-width;
-    transform: translateX(-80%);
-    img {
-      width: $music-cover-width;
-      max-width: $music-cover-max-width;
-      border-radius: $card-border-radius;
-    }
+    flex: 0 0 60%;
+    transform: translateX(-40%);
+    border-radius: $card-border-radius;
+    max-width: 400px;
   }
 }
 
