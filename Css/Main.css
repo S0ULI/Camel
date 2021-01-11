@@ -745,6 +745,11 @@ h3 {
   opacity: 1;
 }
 
+.album-cover a:hover div span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .album-cover a img {
   display: block;
   width: 100%;
@@ -779,6 +784,10 @@ h3 {
   cursor: pointer;
   display: block;
   text-align: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .album-cover .i-can-see-cover {
