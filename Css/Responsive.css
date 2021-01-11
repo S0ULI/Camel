@@ -339,8 +339,16 @@
   .container-width {
     width: 85%;
   }
+  .shop {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .shop-card:last-child {
+    margin-right: 0;
+  }
   .shop-card:first-child {
-    margin-left: 7.5%;
+    margin-left: 0;
   }
   .footer-section {
     background: left url(../../images/Vector/Egypt-Desktop2.svg);
