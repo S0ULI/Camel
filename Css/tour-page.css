@@ -136,6 +136,65 @@ h3 {
   margin-left: 0;
 }
 
+.tour-container {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background: fixed no-repeat url(../images/concert.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tour-dates {
+  top: 100px;
+}
+
+.tour-dates h3 {
+  color: #f1f1f1;
+  border-bottom: solid 1px #FF6517;
+  width: 100%;
+}
+
+.tour-dates h3 span {
+  color: #FF6517;
+}
+
+.date {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: solid 1px #505050;
+  width: 100%;
+}
+
+.date:last-child {
+  border: none;
+}
+
+.date > span {
+  font-size: 1.4rem;
+  color: #f1f1f1;
+  display: block;
+  text-align: center;
+  width: 150px;
+  line-height: 1.5em;
+  margin: 6px 0;
+}
+
+.date > span:last-of-type {
+  margin-bottom: 20px;
+}
+
+.date a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .nav-bar {
   width: 100%;
 }
@@ -917,6 +976,13 @@ h3 {
   .copy-right > div span {
     margin-right: 50px;
   }
+  .date > span {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+  .tour-container {
+    height: 1250px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -999,6 +1065,9 @@ h3 {
   .copy-right > div {
     font-size: 1.4rem;
   }
+  .tour-container {
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1035,14 +1104,5 @@ h3 {
   .container-width {
     width: 1200px;
   }
-}
-
-.tour-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: fixed no-repeat url(../images/concert.png);
-  background-size: cover;
-  overflow: hidden;
 }
 /*# sourceMappingURL=tour-page.css.map */

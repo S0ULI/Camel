@@ -55,6 +55,14 @@ $breakpoints: (
     .copy-right > div span {
         margin-right: 50px;
     }
+
+    // tour-page
+    .date > span {
+        font-size: $main-font-d-size;
+    }
+    .tour-container {
+        height: 1250px;
+    }
 }
 @media screen and (min-width:992px) {
     h3 {
@@ -140,6 +148,14 @@ $breakpoints: (
     }
     .copy-right > div {
         font-size: $footer-font-d-size;
+    }
+    
+    // tour-page
+    .tour-container {
+        height: 100vh;
+    }
+    .date > span {
+        text-align: left;
     }
 }
 @media screen and (min-width:1200px) {

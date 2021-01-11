@@ -232,6 +232,12 @@
   .copy-right > div span {
     margin-right: 50px;
   }
+  .date > span {
+    font-size: 1.7rem;
+  }
+  .tour-container {
+    height: 1250px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -313,6 +319,12 @@
   }
   .copy-right > div {
     font-size: 1.4rem;
+  }
+  .tour-container {
+    height: 100vh;
+  }
+  .date > span {
+    text-align: left;
   }
 }
 
