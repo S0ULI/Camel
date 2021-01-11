@@ -566,6 +566,7 @@ h3 {
 
 .shop {
   overflow: scroll;
+  scrollbar-width: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

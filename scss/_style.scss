@@ -142,6 +142,7 @@
 }
 .shop {
   overflow: scroll;
+  scrollbar-width: none;
   display: flex;
   margin-bottom: 60px;
   width: 100%;
