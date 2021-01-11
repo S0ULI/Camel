@@ -180,7 +180,8 @@ h3 {
   color: #f1f1f1;
   display: block;
   text-align: center;
-  width: 150px;
+  width: 100%;
+  letter-spacing: 1px;
   line-height: 1.5em;
   margin: 6px 0;
 }
@@ -1069,6 +1070,10 @@ h3 {
   }
   .date > span {
     text-align: left;
+    width: 150px;
+  }
+  .date > span:last-of-type {
+    margin-bottom: 6px;
   }
 }
 
