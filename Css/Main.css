@@ -401,7 +401,7 @@ h3 {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: local no-repeat right bottom url(../images/cover-desktop.png);
+  background: local no-repeat right bottom url(../../images/cover-desktop.png);
   background-size: cover;
   overflow: hidden;
 }
@@ -1034,7 +1034,7 @@ h3 {
 
 .footer-section {
   height: 500px;
-  background: local no-repeat top center url(../images/Vector/Egypt-Phone.svg);
+  background: local no-repeat top center url(../../images/Vector/Egypt-Phone.svg);
   background-size: cover;
   position: relative;
 }
