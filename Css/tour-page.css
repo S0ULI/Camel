@@ -310,8 +310,8 @@ h3 {
 }
 
 #toggle:checked ~ .toggle-container .button-toggle {
-  -webkit-box-shadow: 0 0 0 650px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 650px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0 650px rgba(0, 0, 0, 0.9), inset 0 0 0 20px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 0 650px rgba(0, 0, 0, 0.9), inset 0 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 #toggle:checked ~ .toggle-container .button-toggle > span {
@@ -978,7 +978,6 @@ h3 {
   }
   .date > span {
     font-size: 1.7rem;
-    text-align: left;
   }
   .tour-container {
     height: 1250px;
@@ -1067,6 +1066,9 @@ h3 {
   }
   .tour-container {
     height: 100vh;
+  }
+  .date > span {
+    text-align: left;
   }
 }
 
