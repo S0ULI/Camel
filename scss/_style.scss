@@ -20,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  transform: translatey(0);
 
   >h2 {
     color: $text-color-white;

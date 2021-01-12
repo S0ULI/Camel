@@ -450,6 +450,8 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
 }
 
 .landing-header > h2 {

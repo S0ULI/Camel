@@ -88,8 +88,9 @@ $breakpoints: (
     .landing-header {
         width: fit-content;
         height: 230px;
-        top: 15%;
+        top: 30%;
         align-items: flex-start;
+        transform: translatey(-40%);
 
         > h2 {
             font-size: $landing-header-font-d-size;

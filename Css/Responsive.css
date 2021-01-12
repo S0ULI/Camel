@@ -271,10 +271,12 @@
     width: -moz-fit-content;
     width: fit-content;
     height: 230px;
-    top: 15%;
+    top: 30%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-transform: translatey(-40%);
+            transform: translatey(-40%);
   }
   .landing-header > h2 {
     font-size: 7.2rem;
