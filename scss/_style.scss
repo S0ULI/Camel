@@ -111,17 +111,17 @@
     "slide thumbnail2"
     "slide thumbnail3";
 
-    input {
+    input { 
       display: none;
     }
 
     >img {
       opacity: 0;
       z-index: 1;
+      border-radius: $card-border-radius;
     }
 
     img {
-      border-radius: $card-border-radius;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -133,6 +133,10 @@
       height: 100%;
       width: 100%;
       cursor: pointer;
+
+      img {
+        border-radius: $card-border-radius * $middle-cover-size;
+      }
     }
 
     .slide-1-th { grid-area: thumbnail1;}
@@ -140,9 +144,9 @@
     .slide-3-th { grid-area: thumbnail3;}
     #slide1, #slide2, #slide3 {grid-area: slide;}
 
-    #g-toggle1:checked ~ #slide1 { animation: gallery 1s 1 forwards;}
-    #g-toggle2:checked ~ #slide2 { animation: gallery 1s 1 forwards;}
-    #g-toggle3:checked ~ #slide3 { animation: gallery 1s 1 forwards;}
+    #g-toggle1:checked ~ #slide1,
+    #g-toggle2:checked ~ #slide2,
+    #g-toggle3:checked ~ #slide3 { animation: gallery 3s 1 forwards;}
 }
 // Shop
 // Shop

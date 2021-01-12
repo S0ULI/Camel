@@ -48,7 +48,7 @@ h5 {
 
 @-webkit-keyframes gallery {
   0% {
-    opacity: 0;
+    opacity: .4;
     z-index: 1;
   }
   100% {
@@ -59,7 +59,7 @@ h5 {
 
 @keyframes gallery {
   0% {
-    opacity: 0;
+    opacity: .4;
     z-index: 1;
   }
   100% {

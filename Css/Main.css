@@ -48,7 +48,7 @@ h5 {
 
 @-webkit-keyframes gallery {
   0% {
-    opacity: 0;
+    opacity: .4;
     z-index: 1;
   }
   100% {
@@ -59,7 +59,7 @@ h5 {
 
 @keyframes gallery {
   0% {
-    opacity: 0;
+    opacity: .4;
     z-index: 1;
   }
   100% {
@@ -549,10 +549,10 @@ h3 {
 .gallery > img {
   opacity: 0;
   z-index: 1;
+  border-radius: 25px;
 }
 
 .gallery img {
-  border-radius: 25px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -565,6 +565,10 @@ h3 {
   height: 100%;
   width: 100%;
   cursor: pointer;
+}
+
+.gallery > label img {
+  border-radius: 16.66667px;
 }
 
 .gallery .slide-1-th {
@@ -592,19 +596,11 @@ h3 {
   grid-area: slide;
 }
 
-.gallery #g-toggle1:checked ~ #slide1 {
-  -webkit-animation: gallery 1s 1 forwards;
-          animation: gallery 1s 1 forwards;
-}
-
-.gallery #g-toggle2:checked ~ #slide2 {
-  -webkit-animation: gallery 1s 1 forwards;
-          animation: gallery 1s 1 forwards;
-}
-
+.gallery #g-toggle1:checked ~ #slide1,
+.gallery #g-toggle2:checked ~ #slide2,
 .gallery #g-toggle3:checked ~ #slide3 {
-  -webkit-animation: gallery 1s 1 forwards;
-          animation: gallery 1s 1 forwards;
+  -webkit-animation: gallery 3s 1 forwards;
+          animation: gallery 3s 1 forwards;
 }
 
 .shop-container {
