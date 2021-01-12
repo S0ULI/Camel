@@ -100,35 +100,103 @@
     max-width: 700px;
   }
 }
-.gallery {
-  margin-bottom: 40px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px 15px;
-  grid-template-areas:
-    "main main sub"
-    "main main sub2";
-    img {
-      border-radius: $card-border-radius;
-      width: 100%;
-      object-fit: cover;
-    }
+// .gallery {
+//   margin-bottom: 40px;
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-template-rows: 1fr 1fr;
+//   gap: 15px 15px;
+//   grid-template-areas:
+//     "main main sub"
+//     "main main sub2";
+//     img {
+//       border-radius: $card-border-radius;
+//       width: 100%;
+//       object-fit: cover;
+//     }
     
-    .main-img {
-      grid-area: main;
-    }
-    .sub-img {
-      grid-area: sub;
-      height: 100%;
-    }
-    .sub2-img {
-      grid-area: sub2;
-      height: 100%;
-    }
+//     .main-img {
+//       grid-area: main;
+//     }
+//     .sub-img {
+//       grid-area: sub;
+//       height: 100%;
+//     }
+//     .sub2-img {
+//       grid-area: sub2;
+//       height: 100%;
+//     }
+// }
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  
+  li {
+    flex: auto; 
+  }
+
+  a {
+    display: block;
+  }
+  
+  img {
+    width: 40vmin;
+    height: 33.33vmin;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.slides {
+  overflow: hidden;
+  width: 75vmin;
+  height: 100vmin;
+  
+  li {
+    width: 75vmin;
+    height: 100vmin;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  img {
+    height: 100vmin;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
+.slides li:target {
+  z-index: 3;
+  animation: slide 1s 1;
+}
+
+.slides li:not(:target) {
+  animation: hidden 1s 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
 // Shop
 // Shop
 // Shop

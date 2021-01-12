@@ -510,45 +510,114 @@ h3 {
 }
 
 .gallery {
-  margin-bottom: 40px;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 15px 15px;
-      grid-template-areas: "main main sub" "main main sub2";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.gallery img {
-  border-radius: 25px;
-  width: 100%;
+.thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 0;
+}
+
+.thumbnails li {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.thumbnails a {
+  display: block;
+}
+
+.thumbnails img {
+  width: 40vmin;
+  height: 33.33vmin;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
-.gallery .main-img {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: main;
+.slides {
+  overflow: hidden;
+  width: 75vmin;
+  height: 100vmin;
 }
 
-.gallery .sub-img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: sub;
-  height: 100%;
+.slides li {
+  width: 75vmin;
+  height: 100vmin;
+  position: absolute;
+  z-index: 1;
 }
 
-.gallery .sub2-img {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: sub2;
-  height: 100%;
+.slides img {
+  height: 100vmin;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.slides li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+          animation: slide 1s 1;
+}
+
+.slides li:not(:target) {
+  -webkit-animation: hidden 1s 1;
+          animation: hidden 1s 1;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
 }
 
 .shop-container {
