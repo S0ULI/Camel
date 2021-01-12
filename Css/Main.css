@@ -599,8 +599,8 @@ h3 {
 .gallery #g-toggle1:checked ~ #slide1,
 .gallery #g-toggle2:checked ~ #slide2,
 .gallery #g-toggle3:checked ~ #slide3 {
-  -webkit-animation: gallery 3s 1 forwards;
-          animation: gallery 3s 1 forwards;
+  -webkit-animation: gallery 1s 1 forwards;
+          animation: gallery 1s 1 forwards;
 }
 
 .shop-container {
