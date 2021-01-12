@@ -546,12 +546,6 @@ h3 {
   display: none;
 }
 
-.gallery > img {
-  opacity: 0;
-  z-index: 1;
-  border-radius: 25px;
-}
-
 .gallery img {
   width: 100%;
   height: 100%;
@@ -561,14 +555,32 @@ h3 {
   display: block;
 }
 
+.gallery > img {
+  opacity: 0;
+  z-index: 1;
+  border-radius: 25px;
+}
+
 .gallery > label {
   height: 100%;
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
+  border-radius: 16.66667px;
+}
+
+.gallery > label:hover img {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 .gallery > label img {
-  border-radius: 16.66667px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .gallery .slide-1-th {
