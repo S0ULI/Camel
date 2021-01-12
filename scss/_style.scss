@@ -320,16 +320,15 @@
     position: relative;
     display: block;
     overflow: hidden;
-    
+
     &:hover {
-
       img {
-        filter: blur(2px);
+        filter: blur(1px);
       }
-
-       div {
+      
+      div {
         opacity: 1;
-
+        
         span {
           transform: translateY(0);
         }

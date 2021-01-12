@@ -822,8 +822,8 @@ h3 {
 }
 
 .album-cover a:hover img {
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 .album-cover a:hover div {
