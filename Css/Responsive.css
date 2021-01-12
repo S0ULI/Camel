@@ -271,7 +271,7 @@
     width: -moz-fit-content;
     width: fit-content;
     height: 230px;
-    top: 25%;
+    top: 15%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
