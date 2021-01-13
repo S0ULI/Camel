@@ -3,10 +3,11 @@
 $col-count: 12;
 $first-breakpoint: xs;
 $breakpoints: (
-    s:  576px,
-    m:  768px,
-    l:  992px,
-    xl: 1200px,
+    s:   576px,
+    m:   768px,
+    l:   992px,
+    xl:  1200px,
+    xxl: 1600px,
 );
 
 @for $i from 1 through 12 {
@@ -110,6 +111,14 @@ $breakpoints: (
     .history h5 {
         font-size: $sub-header-font-d-size;
     }
+    .h-img {
+        margin: 0 40px 0 0 !important;
+    }
+
+    // music
+    .music-section > div {
+        justify-content: flex-end;
+    }
 
     // footer
     .footer-section {
@@ -171,12 +180,19 @@ $breakpoints: (
         width: $container-1200-width;
     }
 
+    // history
+    .history > div {
+        justify-content: space-between;
+    }
+    .h-img, .h-p {
+        max-width: 550px !important;
+    }
+
     // shop
     .shop {
         justify-content: center;
     }
     .shop-card {
-
         &:last-child {
             margin-right: 0;
         }
@@ -205,10 +221,40 @@ $breakpoints: (
     }
 }
 @media screen and (min-width:1600px) {
+    body, p {
+        font-size: $secondary-font-d-size !important;
+    }
+    .buttons {
+        font-size: $secondary-font-ld-size;
+    }
     .container {
         width: $container-1600-width;
     }
     .container-width {
         width: $container-1600-width;
+    }
+    .landing-header {
+        height: 320px;
+     
+        > h2 {
+            font-size: $landing-header-font-ld-size;
+            line-height: 140px;
+        }
+
+        p {
+            margin-top: -60px;
+        }
+    }
+    .h-img, .h-p {
+        margin: 0 !important;
+        max-width: 600px !important;
+    }
+    .shop {
+        width: $container-1600-width;
+        justify-content: space-between;
+
+        .shop-card {
+            margin: 0;
+        }
     }
 }

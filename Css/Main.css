@@ -495,7 +495,7 @@ h3 {
   border-radius: 25px;
 }
 
-.history .h-img {
+.history .h-img, .history .h-p {
   max-width: 500px;
   margin: 0 auto;
 }

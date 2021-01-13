@@ -51,15 +51,15 @@
   }
 }
 
-// History
-// History
-// History
 
+// History
+// History
+// History
 .history {
   img {
     border-radius: $card-border-radius;
   }
-  .h-img {
+  .h-img, .h-p {
     max-width: 500px;
     margin: 0 auto;
   }
@@ -90,10 +90,10 @@
   }
 }
 
-// gallery
-// gallery
-// gallery
 
+// gallery
+// gallery
+// gallery
 .gallery-section {
   background-color: $text-color-white;
 }
@@ -157,10 +157,11 @@
     #g-toggle2:checked ~ #slide2,
     #g-toggle3:checked ~ #slide3 { animation: gallery 1s 1 forwards;}
 }
-// Shop
-// Shop
-// Shop
 
+
+// Shop
+// Shop
+// Shop
 .shop-container {
   width: 100%;
   position: relative;
@@ -298,6 +299,7 @@
     }
   }
 }
+
 
 // music
 // Music

@@ -202,6 +202,45 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .col-xxl-1 {
+    width: 8.33333%;
+  }
+  .col-xxl-2 {
+    width: 16.66667%;
+  }
+  .col-xxl-3 {
+    width: 25%;
+  }
+  .col-xxl-4 {
+    width: 33.33333%;
+  }
+  .col-xxl-5 {
+    width: 41.66667%;
+  }
+  .col-xxl-6 {
+    width: 50%;
+  }
+  .col-xxl-7 {
+    width: 58.33333%;
+  }
+  .col-xxl-8 {
+    width: 66.66667%;
+  }
+  .col-xxl-9 {
+    width: 75%;
+  }
+  .col-xxl-10 {
+    width: 83.33333%;
+  }
+  .col-xxl-11 {
+    width: 91.66667%;
+  }
+  .col-xxl-12 {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 576px) {
   #toggle:checked ~ .toggle-container .button-toggle {
     -webkit-box-shadow: 0 0 0 850px rgba(0, 0, 0, 0.8), inset 0 0 0 20px rgba(0, 0, 0, 0.8);
@@ -291,6 +330,14 @@
   .history h5 {
     font-size: 3.2rem;
   }
+  .h-img {
+    margin: 0 40px 0 0 !important;
+  }
+  .music-section > div {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .footer-section footer {
     height: 300px;
   }
@@ -341,6 +388,14 @@
   .container-width {
     width: 85%;
   }
+  .history > div {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .h-img, .h-p {
+    max-width: 550px !important;
+  }
   .shop {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -370,11 +425,40 @@
 }
 
 @media screen and (min-width: 1600px) {
+  body, p {
+    font-size: 2rem !important;
+  }
+  .buttons {
+    font-size: 2.4rem;
+  }
   .container {
-    width: 1200px;
+    width: 1300px;
   }
   .container-width {
-    width: 1200px;
+    width: 1300px;
+  }
+  .landing-header {
+    height: 320px;
+  }
+  .landing-header > h2 {
+    font-size: 9.2rem;
+    line-height: 140px;
+  }
+  .landing-header p {
+    margin-top: -60px;
+  }
+  .h-img, .h-p {
+    margin: 0 !important;
+    max-width: 600px !important;
+  }
+  .shop {
+    width: 1300px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .shop .shop-card {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */
