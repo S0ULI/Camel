@@ -6,10 +6,10 @@
 ::-webkit-scrollbar {
     display: none;
 }
-::selection {
-    background: $logo-color;
-    color: $text-color-white;
-}
+// ::selection {
+//     background: $logo-color;
+//     color: $text-color-white;
+// }
 html {
     font-size: $html-font-size;
     font-family: $main-font-family;

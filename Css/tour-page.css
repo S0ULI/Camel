@@ -9,16 +9,6 @@
   display: none;
 }
 
-::-moz-selection {
-  background: #ff874a;
-  color: #f1f1f1;
-}
-
-::selection {
-  background: #ff874a;
-  color: #f1f1f1;
-}
-
 html {
   font-size: 62.5%;
   font-family: poppins;
