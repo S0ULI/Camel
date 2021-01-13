@@ -9,6 +9,16 @@
   display: none;
 }
 
+::-moz-selection {
+  background: #ff874a;
+  color: #f1f1f1;
+}
+
+::selection {
+  background: #ff874a;
+  color: #f1f1f1;
+}
+
 html {
   font-size: 62.5%;
   font-family: poppins;
@@ -135,7 +145,7 @@ body > section {
 }
 
 .buttons:hover {
-  background-color: #FC8C54;
+  background-color: #ff874a;
 }
 
 h3 {
@@ -244,13 +254,13 @@ h3 {
   z-index: 2;
 }
 
-.logo > svg {
+.logo svg {
   width: 100%;
   height: 100%;
 }
 
-.logo > svg path {
-  fill: #FC8C54;
+.logo svg path {
+  fill: #ff874a;
 }
 
 .logo:hover svg path {
@@ -345,13 +355,13 @@ h3 {
 #toggle:checked ~ .toggle-container .button-toggle:before {
   -webkit-transform: translateY(-50%) rotate(45deg) scale(1);
           transform: translateY(-50%) rotate(45deg) scale(1);
-  background-color: #FC8C54;
+  background-color: #ff874a;
 }
 
 #toggle:checked ~ .toggle-container .button-toggle:after {
   -webkit-transform: translateY(-50%) rotate(-45deg) scale(1);
           transform: translateY(-50%) rotate(-45deg) scale(1);
-  background-color: #FC8C54;
+  background-color: #ff874a;
 }
 
 #toggle:checked ~ .nav {
@@ -569,7 +579,7 @@ h3 {
 }
 
 .contact-section form .contact-btn button:hover {
-  background-color: #FC8C54;
+  background-color: #ff874a;
 }
 
 .contact-section form .contact-btn button span {

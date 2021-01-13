@@ -44,7 +44,6 @@ $p-line-height:     1.6em;
 $text-color-white:  #f1f1f1;
 $light-gray-color:  #cccccc;
 $background-color:  #EED8B9;
-$logo-color:        #FC8C54;
 $main-color:        #FF6517;
 $footer-logo-color: #935351;
 $dark-gray-color:   #505050;
@@ -52,6 +51,7 @@ $text-color-black:  #1f1f1f;
 $Shop-btn-color:    #000000;
 $footer-color:      #00000015;
 // theme
+$logo-color:  lighten($main-color, 10%);
 $music-player-color:  $text-color-black;
 $shop-card-color:     $text-color-white;
 $container-color:     $text-color-white;
