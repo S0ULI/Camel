@@ -268,6 +268,11 @@ $breakpoints: (
         max-width: 650px !important;
     }
 
+    // gallery
+    .gallery {
+        max-width: 700px;
+    }
+
     // shop
     .shop {
         width: $container-1600-width;
