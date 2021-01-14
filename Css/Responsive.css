@@ -422,6 +422,9 @@
     width: 50px;
     height: 50px;
   }
+  .copy-right > div {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -432,10 +435,13 @@
     font-size: 2.4rem;
   }
   .container {
-    width: 1300px;
+    width: 1400px;
   }
   .container-width {
-    width: 1300px;
+    width: 1400px;
+  }
+  .landing-container {
+    background-position: center right !important;
   }
   .landing-header {
     height: 320px;
@@ -447,18 +453,60 @@
   .landing-header p {
     margin-top: -60px;
   }
+  h3 {
+    font-size: 5.2rem;
+    line-height: 140px;
+  }
+  .history h5 {
+    font-size: 4.2rem;
+    line-height: 80px;
+  }
   .h-img, .h-p {
     margin: 0 !important;
-    max-width: 600px !important;
+    max-width: 650px !important;
   }
   .shop {
-    width: 1300px;
+    width: 1400px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .shop .shop-card {
     margin: 0;
+    width: 300px;
+  }
+  .shop .shop-card .card-info {
+    margin-top: 30px;
+  }
+  .shop .shop-card .card-info span:last-child {
+    font-size: 1.7rem;
+  }
+  .shop .shop-card .card-size {
+    margin-top: 20px;
+  }
+  .shop .shop-card .card-size span {
+    font-size: 2rem;
+  }
+  .shop .shop-card .size-btn {
+    margin-top: 10px;
+    width: 240px;
+  }
+  .shop .shop-card .size-btn > a {
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+  }
+  .shop .shop-card .card-btn {
+    width: 300px;
+  }
+  form label {
+    font-size: 2rem !important;
+  }
+  .contact-btn button {
+    font-size: 2rem !important;
+  }
+  .copy-right > div {
+    font-size: 1.7rem;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */

@@ -219,6 +219,9 @@ $breakpoints: (
           height: 50px;
         }
     }
+    .copy-right > div {
+        font-size: $footer-font-d-size;
+    }
 }
 @media screen and (min-width:1600px) {
     body, p {
@@ -233,6 +236,9 @@ $breakpoints: (
     .container-width {
         width: $container-1600-width;
     }
+    .landing-container {
+        background-position: center right !important;
+    }
     .landing-header {
         height: 320px;
      
@@ -245,16 +251,75 @@ $breakpoints: (
             margin-top: -60px;
         }
     }
+    h3 {
+        font-size: $header-font-ld-size;
+        line-height: 140px;
+    }
+
+    // history
+    .history {
+        h5 {
+            font-size: $header-font-d-size;
+            line-height: 80px;
+        }
+    }
     .h-img, .h-p {
         margin: 0 !important;
-        max-width: 600px !important;
+        max-width: 650px !important;
     }
+
+    // shop
     .shop {
         width: $container-1600-width;
         justify-content: space-between;
 
         .shop-card {
             margin: 0;
+            width: $shop-card-d-width;
+
+            .card-info {
+                margin-top: 30px;
+
+                span:last-child {
+                    font-size: $main-font-d-size;
+                }
+            }
+
+            .card-size {
+                margin-top: 20px;
+
+                span {
+                    font-size: $secondary-font-d-size;
+                }
+            }
+
+            .size-btn {
+                margin-top: 10px;
+                width: $shop-card-d-width - 60;
+
+                > a {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 48px;
+                }
+            }
+            .card-btn {
+                width: $shop-card-d-width;
+                // margin-top: 30px;
+            }
         }
+    }
+
+    // contact
+    form label {
+        font-size: $secondary-font-d-size !important;
+    }
+    .contact-btn button {
+        font-size: $secondary-font-d-size !important;
+    }
+
+    // footer
+    .copy-right > div {
+        font-size: $main-font-d-size;
     }
 }
