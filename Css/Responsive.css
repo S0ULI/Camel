@@ -407,6 +407,9 @@
   .shop-card:first-child {
     margin-left: 0;
   }
+  .music-player {
+    max-width: 450px;
+  }
   .footer-section {
     background: left url(../../images/Vector/Egypt-Desktop2.svg);
   }

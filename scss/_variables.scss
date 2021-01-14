@@ -62,6 +62,7 @@ $nav-btn-hover-color: $light-gray-color;
 
 // box-shadow
 $btn-box-shadow: 2px 2px 10px 0px #000000 8%;
+$card-drop-shadow: drop-shadow(-2px 2px 10px rgba(0, 0, 0, 0.1));
 
 
 // opacity
@@ -93,5 +94,6 @@ $transition-duration: 0.5s;
 $middle-cover-size:      2/3;
 $last-cover-size:        1/2;
 $music-player-height:    500px;
+$music-player-d-height:  450px;
 $footer-links-height:    90%;
 

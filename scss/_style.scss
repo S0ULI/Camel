@@ -187,6 +187,7 @@
   border-radius: $card-border-radius;
   padding: $card-padding;
   position: relative;
+  filter: $card-drop-shadow;
 
   &:first-child {
     margin-left: 5%;
@@ -387,6 +388,7 @@
     transform: translateX(-40%);
     border-radius: $card-border-radius;
     max-width: 400px;
+    filter: $card-drop-shadow;
   }
 }
 
@@ -456,7 +458,6 @@
     top: 40px;
     height: 90%;
     width: 100%;
-    max-width: 400px;
     padding: $card-padding;
 
     div {
